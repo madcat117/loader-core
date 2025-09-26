@@ -9,7 +9,8 @@
 #include <iostream>
 #include <vector>
 #include <process.h> // For _beginthreadex
-#include <Richedit.h> // For the log box
+#include <richedit.h> // For the log box
+#include <ctime>
 #include "loader_core.h"
 
 // --- Control IDs ---
