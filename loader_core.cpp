@@ -452,6 +452,7 @@ void run_vm(VMContext* ctx, uint64_t max_steps) {
             ctx->running = false;
             break;
         }
+        ctx->ip += sizeof(uint16_t);
         g_handlers[opcode](ctx);
         ctx->step_count++;
     }
